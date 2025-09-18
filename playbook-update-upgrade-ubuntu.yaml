@@ -1,0 +1,13 @@
+---
+- name: Atualizar e fazer upgrade em servidores Ubuntu
+  hosts: ubuntu_servers  # Altere para o grupo de hosts do seu inventario
+  become: yes
+
+  tasks:
+    - name: Atualiza o cache de pacotes (apt update)
+      ansible.builtin.apt:
+        update_cache: yes
+      
+    - name: Faz o upgrade de todos os pacotes (apt upgrade)
+      ansible.builtin.apt:
+        upgrade: dist
