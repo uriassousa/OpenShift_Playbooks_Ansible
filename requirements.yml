@@ -1,6 +1,6 @@
 ---
 collections:
 - name: redhat.openshift_virtualization
-  version: "4.14.0" # A version that is likely a stable release
+  version: "4.13.0" # A version that is likely a stable release
 - name: kubernetes.core
   version: "2.5.0"
